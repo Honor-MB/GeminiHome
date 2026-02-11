@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Home Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="geniniHome.js"></script>
+</head>
+<body class="min-h-screen bg-linear-to-b">
+
+    <!------------ THE HEADER SECTION ------------>
+
+     <header class="bg-white text-black sticky top-0 right-0 left-0 z-[100]">
+        <section class=" flex items-center justify-between my-2 sm:my-5 sm:mx-10 mx-5">
+            <div class="text-white w-[30%]">
+                <img src="./assets/Frame 1000005481.png" alt="">
+            </div>
+
+            <button id="moblibe-open-button" class="md:hidden">
+                <img src="./assets/Burger Menu.png" alt="Burger Menu">
+            </button>
+
+            <nav class="md:text-[14px] lg:text-[16px] md:justify-around md:gap-4 hidden  md:flex" aria-label= "main">
+                <a href="#home" class="hover:text-[#B09486]">Home</a>
+                <a href="#gallery" class="hover:text-[#B09486]">Gallery</a>
+                <a href="#location" class="hover:text-[#B09486]">Location</a>
+                <a href="#ooking" class="hover:text-[#B09486]">Booking</a>
+                <a href="#faq" class="hover:text-[#B09486]">FAQ</a>
+            </nav>
+
+            <div class="hidden md:flex md:text-[14px] lg:text-[16px]">
+                <button class="bg-[#B09486] text-white text-semibold rounded-3xl p-3">Book now</button>
+            </div>
+        </section>
+     </header> 
+
+     <!--------------------- THE MAIN SECTION--------------------------- -->
+     <main class="bg-gray-100">
+
+        <!------------------ THE HERO SECTION--------------------------- -->
+        <section class="flex flex-col md:flex-row md:gap-[0] lg:gap-[60px] xl:gap-[100px] h-full relative z-[1]">
+            <div class="flex flex-col items-center md:my-auto mx-auto w-[80%] md:w-auto md:px-[40px] py-[40px] md:py-[0]">
+                <div class="flex md:justify-start justify-between gap-[16px] font-bold mb-[6px] w-[100%]">
+
+                    <div class=" flex gap-2 items-center font-bold rounded-3xl border w-[148px] py-[6px] pe-[16px] ps-[8px] border-[1px] border-[#E5E5E5]">
+                        <div>
+                            <img class="w-[24px] h-[24px]" src="./assets/logo-airbnb.png" alt="Airbnb logo">
+                        </div>
+                        <div class="text-[10px]">
+                            <div class="text-[#6E7491]">RATED on Airbnb</div>
+                            <div class="flex gap-1 items-center">
+                                <img class="h-[8px] w-[46px]" src="./assets/Stars.png" alt="Half Star">
+                                <span class="text-[#FFA432] h-[15px] w-[38px]">4.5 / 5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class=" flex gap-2 items-center font-bold rounded-3xl border w-[165px] py-[6px] pe-[16px] ps-[8px] border-[1px] border-[#E5E5E5]">
+                        <div>
+                            <img class="w-[24px] h-[24px]" src="./assets/logo-trip-advisor.png" alt="Trip advisor logo">
+                        </div>
+                        <div class="text-[10px]">
+                            <div class="text-[#6E7491]">RATED on Tripadvisor</div>
+                            <div class="flex gap-1 items-center">
+                                <img class="h-[8px] w-[46px]" src="./assets/Stars-1.png" alt="Rated Full Star">
+                                <span class="text-[#FFA432] h-[15px] w-[38px]">4.9 / 5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden lg:flex gap-2 items-center font-bold rounded-3xl border w-[173px] py-[6px] pe-[16px] ps-[8px] border-[1px] border-[#E5E5E5]">
+                        <div>
+                            <img class="w-[24px] h-[24px]" src="./assets/logo-booking.com.png" alt=" Booking logo">
+                        </div>
+                        <div class="text-[10px]">
+                            <div class="text-[#6E7491]">RATED on Booking.com</div>
+                            <div class="flex gap-1 items-center">
+                                <img class="h-[8px] w-[46px]" src="./assets/Stars-1.png" alt="Rated Full Star">
+                                <span class="text-[#FFA432] h-[15px] w-[38px]">4.9 / 5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- ------------------------HERO INTRO----------------------- -->
+
+                 <article class="text-black bg-black w-[100%] mt-[6px] flex flex-col items-center  md:items-start text-center md:text-left gap-[10px]">
+                    <h1 class="leading-[1.1] font-[Inter] font-bold text-[50px] md:text-[38px] lg:text-[48px] text-[#212121]">Luxury Stays, <span class="block">Just One Click Away</span></h1>
+                    <p class="w-[353px] text-[18px] text-[#696458] font-normal">Book now and experience luxury like never before.</p>
+                    <button class="flex gap-[8px] py-[10px] px-[16px] bg-[#B09486] text-white text-semibold rounded-3xl  w-[164px] ">See availability <span class="material-icons-outlined w-[12px] h-[12px]">calendar_month</span></button>
+                 </article>
+            </div>
+            <div class="mt-[20px]">
+                <img class="hidden md:flex relative" src="./assets/WhatsApp Image 2025-10-14 at 08.58.48_2c331cb8 1.png" alt="">
+                <img class="absolute md:bottom-0 right-0" src="./assets/Frame 1000005313.png" alt="">
+                <img class=" w-[100%] md:hidden" src="./assets/unsplash_umAXneH4GhA.png" alt="">
+            </div>
+            <img class="hidden xl:flex absolute bottom-0 left-0 w-[228.1px]" src="./assets/Group 1000002079.png" alt="">
+        </section>
+
+
+        
+        <!-- ------------------------------GALLARY SECTION--------------------------------- -->
+
+        <section id="gallary" class="py-10 px-5 md:px-20">
+        <div class="w-[100%] md:w-[70%] lg:w-[52%] mx-auto text-center mb-10">
+            <h2 class="font-bold text-[43.36px] md:text-[47px]">Gallary</h2>
+            <p class="text-[#69645B] text-[17.34px]">Explore the serene beauty of Gemini Homes—whether it's the minimalist interiors, the surrounding landscapes, or the cozy nooks perfect for relaxation.</p>
+        </div>
+
+
+        <!--------------------------------- GALLARY GRID------------------------- -->
+        
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+        
+            <!-- Left Large Image -->
+            <div class="col-span-4 overflow-hidden">
+                <img class=" w-full h-full object-cover" src="./assets/Booking Page.png" alt="Sports court"/>
+            </div>
+
+            <!-- Right Side Grid -->
+            <div class="col-span-2 grid grid-cols-2 gap-4 grid-rows-[12, 209px]">
+                
+                <div class="col-span-2 row-span-3 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="./assets/WhatsApp Image 2025-10-14 at 14.34.05_dd5cdb1a.png" alt="Restaurant"/>
+                </div>
+
+                <div class="overflow-hidden">
+                    <img class="w-full h-full object-cover" src="./assets/WhatsApp Image 2025-09-17 at 19.14.32_492a2b8e.png" alt="Restaurant"/>
+                </div>
+
+                <div class="overflow-hidden">
+                    <img class="w-full h-full object-cover" src="./assets/WhatsApp Image 2025-09-17 at 19.14.32_8c5baa6c.png" alt="Estate view"/>
+                </div>
+
+                <div class="overflow-hidden">
+                    <img class="w-full h-full object-cover" src="./assets/Booking Page-1.png" alt="Parking lot"/>
+                </div>
+
+            </div>
+        </div>
+
+        </section>
+
+        <section id="facilities">
+        <div class="w-[90%] mx-auto py-10 px-5">
+
+            <div class="w-[100%] md:w-[70%] lg:w-[52%] mx-auto text-center mb-10">
+                <h2 class="font-bold text-[43.36px] md:text-[47px]">Facilities</h2>
+                <p class="text-[#69645B] text-[17.34px]">From the comfort of your space, get all the facilities and more to make your stay memorable</p>
+            </div>
+
+            <div class="w-[90%] flex justify-center flex-wrap gap-x-2 md:gap-x-4 gap-y-8 md:gap-y-16 font-[Inter] font-bold mx-auto text-[10px] md:text-[14px]">
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center ">
+                    <div><img class="text-[#B09486]" src="./icons/WiFi.png" alt="Wifi"></div>
+                    <p class="text-[#69645B]">Wifi</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/Air-Conditioner.png" alt="Air conditioner"></div>
+                    <p class="text-[#69645B]">Air conditioner</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  flex flex-col gap-[16px] items-center text-center">
+                    <div><img class="text-[#B09486]" src="./icons/Garage.png" alt="Free parking on premises"></div>
+                    <p class="text-[#69645B]">Free parking on premises</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/Door-Handle.png" alt="Self check-in"></div>
+                    <p class="text-[#69645B]">Self check-in</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/Washing-Machine.png" alt="Laundromat"></div>
+                    <p class="text-[#69645B]">Laundromat</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/bx_football.png" alt="Football Field"></div>
+                    <p class="text-[#69645B]">Football Field</p>
+                </div>
+                
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/Shampoo.png" alt="Toiletries"></div>
+                    <p class="text-[#69645B]">Toiletries</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/map_grocery-or-supermarket.png" alt="Supermarket"></div>
+                    <p class="text-[#69645B]">Supermarket</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/icon-park_tv.png" alt="Smart TV (Netflix..)"></div>
+                    <p class="text-[#69645B]">Smart TV (Netflix..)</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/arcticons_tennis.png" alt="Tennis Court"></div>
+                    <p class="text-[#69645B]">Tennis Court</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/Bathtub.png" alt="Shower"></div>
+                    <p class="text-[#69645B]">Shower</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/Icon.png" alt="Iron"></div>
+                    <p class="text-[#69645B]">Iron</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/Towel.png" alt="Towels"></div>
+                    <p class="text-[#69645B]">Towels</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/healthicons_discharge-lounge-outline.png" alt="Rooftop Lounge"></div>
+                    <p class="text-[#69645B]">Rooftop Lounge</p>
+                </div>
+
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
+                    <div><img class="text-[#B09486]" src="./icons/mdi_security-camera.png" alt="24hrs Security"></div>
+                    <p class="text-[#69645B]">24hrs Security</p>
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+        <section class="my-[40px] md:hidden">
+        <article class="text-black md:w-[400px] lg:w-[460px] h-auto mt-[6px] flex flex-col items-center  md:items-start text-center md:text-left gap-[10px] w-[386px] mx-auto">
+            <h1 class="leading-[1.1] font-[Inter] font-bold text-[50px] md:text-[38px] lg:text-[48px] text-[#212121]">Best possible<span class="block">location</span></h1>
+            <p class="w-[353px] text-[18px] text-[#696458] font-normal">In the heart of Lekki Phase 1, close to all major exhibitions. Being it Nike Art Gallery to the night life and the beaches...</p>
+            <button class="flex gap-[8px] py-[10px] px-[16px] text-black text-semibold rounded-3xl w-[164px] border border-solid border-black border-[2px]">Open maps<span class="material-icons-outlined w-[12px] h-[12px]">map</span></button>
+        </article>
+        </section>
+
+        <section class="w-[100%] md:h-[500px] h-[300px] flex items-center bg-cover"
+        style="background-image: url(./assets/Basemap\ image.png);">
+
+        <article class="text-black md:w-[400px] lg:w-[460px] h-auto mt-[6px] flex flex-col items-center  md:items-start text-center md:text-left gap-[10px] w-[386px] mx-[64px] hidden md:flex">
+            <h1 class="leading-[1.1] font-[Inter] font-bold text-[50px] md:text-[38px] lg:text-[48px] text-[#212121]">Best possible<span class="block">location</span></h1>
+            <p class="w-[353px] text-[18px] text-[#696458] font-normal">In the heart of Lekki Phase 1, close to all major exhibitions. Being it Nike Art Gallery to the night life and the beaches...</p>
+            <button class="flex gap-[8px] py-[10px] px-[16px] text-semibold rounded-3xl text-black w-[164px] border border-solid border-black border-[2px]">Open maps<span class="material-icons-outlined w-[12px] h-[12px]">map</span></button>
+        </article>
+
+        <div class="justify-self-center self-center-safe m-auto md:m-0">
+            <img class="my-auto w-[60%]" src="./assets/Pin.png" alt="Pinned Location">
+        </div>
+        </section>
+            
+        <section class="w-[100%] h-[500px] bg-cover bg-center relative"
+        style="background-image: url(assets/e20642e1c3ef7f0047b177502c68de1d77af18f8\ \(1\).jpg);">
+            <img class="absolute bottom-0 right-0" src="./assets/Frame 1000005313.png" alt="">
+            <div class="bg-[#00000096] w-[100%] h-[100%]  flex items-center">
+                <img class="w[50%] h-[100%] hidden lg:flex" src="./assets/black person pleased.png" alt="">
+                <article class="text-white flex flex-col items-center md:items-start text-center md:text-left gap-[20px] mx-[64px]">
+                    <h1 class="leading-[1.1] font-[Inter] font-bold text-[50px] md:text-[38px] lg:text-[48px]">Anne Johnson</h1>
+                    <p class="flex items-center w-[353px] text-[18px] font-normal "><span class="material-icons-outlined">location_on</span>London, UK | <img class="ms-[10px] w-[80px] h-auto" src="./assets/Stars-1.png" alt="">4.9 (300 reviews)</p>
+                    <p class="w-[80%]  text-[18px] font-normal italic">Exploring Nigeria for the first time and staying over at Gemini1824 was just what I needed. Amazing customer service with good facilities and security. I recommend.</p>
+                    <button class="bg-[#B09486] text-white text-semibold rounded-3xl p-3">Book now</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-white py-10 relative">
+            <div class=" md:flex md:flex-row md:items-start md:justify-between w-[90%] mx-auto flex flex-col gap-5 items-center ">
+                <h2 class="text-[45px] font-bold font-[inter]">Questions?</h2>
+
+                <div class="flex flex-col gap-5 md:w-[60%] text-[14px]">
+                    <!-- Accordion Item 1 -->
+                    <div class=" rounded-3xl">
+                        <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center py-5 text-slate-800 bg-[#F3F3F3] px-10 rounded-3xl">
+                            <span>What is the check-in and check-out time?</span>
+                            <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                            </svg>
+                            </span>
+                        </button>
+                        <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
+                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <div class="text-sm text-slate-500">
+                            Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Accordion Item 2 -->
+                    <div class=" rounded-3xl">
+                        <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center py-5 text-slate-800 bg-[#F3F3F3] px-10 rounded-3xl">
+                            <span>Is early check-in or late check-out available?</span>
+                            <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                            </svg>
+                            </span>
+                        </button>
+                        <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
+                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <div class="text-sm text-slate-500">
+                            Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class=" rounded-3xl">
+                        <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center py-5 text-slate-800 bg-[#F3F3F3] px-10 rounded-3xl">
+                            <span>Is there parking available on the premises?</span>
+                            <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                            </svg>
+                            </span>
+                        </button>
+                        <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
+                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <div class="text-sm text-slate-500">
+                            Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div class=" rounded-3xl">
+                        <button onclick="toggleAccordion(4)" class="w-full flex justify-between items-center py-5 text-slate-800 bg-[#F3F3F3] px-10 rounded-3xl">
+                            <span>Do you allow pets?</span>
+                            <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                            </svg>
+                            </span>
+                        </button>
+                        <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
+                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <div class="text-sm text-slate-500">
+                            Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 5 -->
+                    <div class=" rounded-3xl">
+                        <button onclick="toggleAccordion(5)" class="w-full flex justify-between items-center py-5 text-slate-800 bg-[#F3F3F3] px-10 rounded-3xl">
+                            <span>What amenities are provided?</span>
+                            <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                            </svg>
+                            </span>
+                        </button>
+                        <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
+                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <div class="text-sm text-slate-500">
+                            Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 6 -->
+                    <div class=" rounded-3xl">
+                        <button onclick="toggleAccordion(6)" class="w-full flex justify-between items-center py-5 text-slate-800 bg-[#F3F3F3] px-10 rounded-3xl">
+                            <span>What is your cancellation policy?</span>
+                            <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                            </svg>
+                            </span>
+                        </button>
+                        <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
+                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <div class="text-sm text-slate-500">
+                            Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="hidden md:flex absolute bottom-0 left-0 w-[228.1px]" src="./assets/Group 1000002079.png" alt="">
+        </section>
+     </main>
+
+     <footer class="text-white">
+        <section class="bg-[#66594A] m-2 p-5 sm:p-10 ">
+            <section class="flex flex-col gap-2 sm:flex sm:justify-between">
+                <div class="w-[300.01px]">
+                    <img src="./assets/Frame 1000005480.png" alt="">
+                    <p>Where comfort and <br>serenity</p>
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between sm:w-[47%] w-[100%]">
+                    <div>
+                        <h3 class="text-[12px] font-[inter] text-[#B1A8A4]">NAVIGATION</h3>
+                        <ul class="text-[14px]">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Facilities</a></li>
+                            <li><a href="">Location</a></li>
+                            <li><a href="">Booking</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden sm:flex">
+                        <h3 class="text-[12px] font-[inter] text-[#B1A8A4]">COMPANY</h3>
+                        <ul class="text-[14px]">
+                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-[12px] font-[inter] text-[#B1A8A4]">CONTACT</h3>
+                        <ul class="text-[14px]">
+                            <li><a href="">+234 706 528 3558 </a></li>
+                            <li><a href="">gemini1824@gmail.com</a></li>
+                            <li><a href="">Lekki, Lagos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="my-5">
+                <p class="text-[12px] font-[inter] text-[#B1A8A4]">Copyright © 2025 Gemini1824. All rights reserved.</p>
+            </section>
+        </section> 
+     </footer>
+</body>
+</html>

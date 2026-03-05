@@ -10,20 +10,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="geniniHome.js"></script>
+    <script src="Home.js" defer></script>
 </head>
-<body class="min-h-screen bg-linear-to-b">
+<body class="max-w-[1800px] mx-auto">
 
     <!------------ THE HEADER SECTION ------------>
 
-     <header class="bg-white text-black sticky top-0 right-0 left-0 z-[100]">
-        <section class=" flex items-center justify-between my-2 sm:my-5 sm:mx-10 mx-5">
-            <div class="text-white w-[30%]">
-                <img src="./assets/Frame 1000005481.png" alt="">
+     <header class="bg-white sticky top-0 z-[100] flex items-center justify-between p-4 md:p-8 mx-auto">
+            <div>
+                <img width="200" class="w-48 md:w-64 lg:w-72" src="./assets/geminiHome-logo.png" alt="Luxury living room interior">
             </div>
 
             <button id="moblibe-open-button" class="md:hidden">
-                <img src="./assets/Burger Menu.png" alt="Burger Menu">
+                <img width="43" src="./assets/Menu.png" alt="Burger Menu">
             </button>
 
             <nav class="md:text-[14px] lg:text-[16px] md:justify-around md:gap-4 hidden  md:flex" aria-label= "main">
@@ -37,7 +36,6 @@
             <div class="hidden md:flex md:text-[14px] lg:text-[16px]">
                 <button class="bg-[#B09486] text-white text-semibold rounded-3xl p-3">Book now</button>
             </div>
-        </section>
      </header> 
 
      <!--------------------- THE MAIN SECTION--------------------------- -->

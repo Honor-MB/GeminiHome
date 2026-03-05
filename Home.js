@@ -1,3 +1,13 @@
+const narBarBtn = document.querySelector("#sm__button--narbar")
+const narBar = document.querySelector("#sm__narbar")
+
+narBarBtn.addEventListener("click", () =>
+{
+  narBar.classList.toggle("hidden")
+})
+
+
+
 function toggleAccordion(index) {
     const content = document.getElementById(`content-${index}`);
     const icon = document.getElementById(`icon-${index}`);

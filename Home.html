@@ -16,21 +16,22 @@
 
     <!------------ THE HEADER SECTION ------------>
 
-     <header class="bg-white sticky top-0 z-[100] flex items-center justify-between p-4 md:p-8 mx-auto">
+     <header class="bg-white sticky right-0 left-0 top-0 z-[100] flex items-center justify-between p-4 md:p-8 mx-auto w-[100%]">
             <div>
-                <img width="200" class="w-48 md:w-64 lg:w-72" src="./assets/geminiHome-logo.png" alt="Luxury living room interior">
+                <img width="200" class="w-48 md:w-64 lg:w-72" src="./assets/geminiHome-logo.png" alt="">
             </div>
 
-            <button id="moblibe-open-button" class="md:hidden">
+            <button id="sm__button--narbar" class="md:hidden">
                 <img width="43" src="./assets/Menu.png" alt="Burger Menu">
             </button>
-
-            <nav class="md:text-[14px] lg:text-[16px] md:justify-around md:gap-4 hidden  md:flex" aria-label= "main">
-                <a href="#home" class="hover:text-[#B09486]">Home</a>
-                <a href="#gallery" class="hover:text-[#B09486]">Gallery</a>
-                <a href="#location" class="hover:text-[#B09486]">Location</a>
-                <a href="#ooking" class="hover:text-[#B09486]">Booking</a>
-                <a href="#faq" class="hover:text-[#B09486]">FAQ</a>
+            <nav  id="sm__narbar" class=" hidden 
+            flex flex-col items-center gap-4 absolute right-0 left-0 top-20 text-center bg-white p-6 text-lg md:flex md:flex-row md:justify-around md:gap-4 md:static md:text-[14px] lg:text-lg" aria-label= "main">
+                <a role="menuitem" href="#home" class="hover:text-[#B09486]">Home</a>
+                <a role="menuitem" href="#gallary" class="hover:text-[#B09486]">Gallery</a>
+                <!-- <a role="menuitem" href="#facilities" class="hover:text-[#B09486]">Facilities</a> -->
+                <a role="menuitem" href="#location" class="hover:text-[#B09486]">Location</a>
+                <a role="menuitem" href="#ooking" class="hover:text-[#B09486]">Booking</a>
+                <a role="menuitem" href="#faq" class="hover:text-[#B09486]">FAQ</a>
             </nav>
 
             <div class="hidden md:flex md:text-[14px] lg:text-[16px]">
@@ -39,7 +40,7 @@
      </header> 
 
      <!--------------------- THE MAIN SECTION--------------------------- -->
-     <main class="bg-gray-100">
+     <main class="bg-gray-100 ">
 
         <!------------------ THE HERO SECTION--------------------------- -->
         <section class="flex flex-col md:flex-row md:gap-[0] lg:gap-[60px] xl:gap-[100px] h-full relative z-[1]">
@@ -96,9 +97,9 @@
                  </article>
             </div>
             <div class="mt-[20px]">
-                <img class="hidden md:flex relative" src="./assets/WhatsApp Image 2025-10-14 at 08.58.48_2c331cb8 1.png" alt="">
-                <img class="absolute md:bottom-0 right-0" src="./assets/Frame 1000005313.png" alt="">
-                <img class=" w-[100%] md:hidden" src="./assets/unsplash_umAXneH4GhA.png" alt="">
+                <img class=" hidden md:flex relative" src="./assets/Luxury-room.png" alt="">
+                <img class="absolute bottom-0 0 w-[20%]" src="./assets/Image-slide-arrow.png" alt="">
+                <img class=" w-[100%] md:hidden" src="./assets/Luxury-room-sm.png" alt="">
             </div>
             <img class="hidden xl:flex absolute bottom-0 left-0 w-[228.1px]" src="./assets/Group 1000002079.png" alt="">
         </section>
@@ -107,7 +108,7 @@
         
         <!-- ------------------------------GALLARY SECTION--------------------------------- -->
 
-        <section id="gallary" class="py-10 px-5 md:px-20">
+        <section id="gallary" class="py-10 p-4 md:p-8">
         <div class="w-[100%] md:w-[70%] lg:w-[52%] mx-auto text-center mb-10">
             <h2 class="font-bold text-[43.36px] md:text-[47px]">Gallary</h2>
             <p class="text-[#69645B] text-[17.34px]">Explore the serene beauty of Gemini Homes—whether it's the minimalist interiors, the surrounding landscapes, or the cozy nooks perfect for relaxation.</p>
@@ -147,88 +148,87 @@
 
         </section>
 
-        <section id="facilities">
-        <div class="w-[90%] mx-auto py-10 px-5">
+        <section id="facilities" class="p-4 md:p-8">
+        <div class="w-[100%] md:w-[90%] mx-auto py-10">
 
             <div class="w-[100%] md:w-[70%] lg:w-[52%] mx-auto text-center mb-10">
                 <h2 class="font-bold text-[43.36px] md:text-[47px]">Facilities</h2>
                 <p class="text-[#69645B] text-[17.34px]">From the comfort of your space, get all the facilities and more to make your stay memorable</p>
             </div>
 
-            <div class="w-[90%] flex justify-center flex-wrap gap-x-2 md:gap-x-4 gap-y-8 md:gap-y-16 font-[Inter] font-bold mx-auto text-[10px] md:text-[14px]">
-
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center ">
-                    <div><img class="text-[#B09486]" src="./icons/WiFi.png" alt="Wifi"></div>
+            <div class="md:w-[100%] grid md:grid-cols-5 grid-cols-3 justify-center  mx-auto  gap-y-8 md:gap-y-16 font-[Inter] font-bold text-[10px] md:text-[14px]">
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/WiFi.svg" alt="Wifi"></div>
                     <p class="text-[#69645B]">Wifi</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/Air-Conditioner.png" alt="Air conditioner"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/Air-Conditioner.svg" alt="Air conditioner"></div>                    
                     <p class="text-[#69645B]">Air conditioner</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  flex flex-col gap-[16px] items-center text-center">
-                    <div><img class="text-[#B09486]" src="./icons/Garage.png" alt="Free parking on premises"></div>
+                <div class="w-[95px] md:w-[140px]  flex flex-col gap-[16px] items-center mx-auto text-center">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/Garage.svg" alt="Free parking on premises"></div>
                     <p class="text-[#69645B]">Free parking on premises</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/Door-Handle.png" alt="Self check-in"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/Door-Handle.svg" alt="Self check-in"></div>
                     <p class="text-[#69645B]">Self check-in</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/Washing-Machine.png" alt="Laundromat"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/Washing-Machine.svg" alt="Laundromat"></div>
                     <p class="text-[#69645B]">Laundromat</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/bx_football.png" alt="Football Field"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/bx_football.svg" alt="Football Field"></div>
                     <p class="text-[#69645B]">Football Field</p>
                 </div>
                 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/Shampoo.png" alt="Toiletries"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/Shampoo.svg" alt="Toiletries"></div>
                     <p class="text-[#69645B]">Toiletries</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/map_grocery-or-supermarket.png" alt="Supermarket"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/map_grocery-or-supermarket.svg" alt="Supermarket"></div>
                     <p class="text-[#69645B]">Supermarket</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/icon-park_tv.png" alt="Smart TV (Netflix..)"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/icon-park_tv.svg" alt="Smart TV (Netflix..)"></div>
                     <p class="text-[#69645B]">Smart TV (Netflix..)</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/arcticons_tennis.png" alt="Tennis Court"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/arcticons_tennis.svg" alt="Tennis Court"></div>
                     <p class="text-[#69645B]">Tennis Court</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/Bathtub.png" alt="Shower"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/Bathtub.svg" alt="Shower"></div>
                     <p class="text-[#69645B]">Shower</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/Icon.png" alt="Iron"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/Icon.svg" alt="Iron"></div>
                     <p class="text-[#69645B]">Iron</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/Towel.png" alt="Towels"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/Towel.svg" alt="Towels"></div>
                     <p class="text-[#69645B]">Towels</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/healthicons_discharge-lounge-outline.png" alt="Rooftop Lounge"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/healthicons_discharge-lounge-outline.svg" alt="Rooftop Lounge"></div>
                     <p class="text-[#69645B]">Rooftop Lounge</p>
                 </div>
 
-                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center">
-                    <div><img class="text-[#B09486]" src="./icons/mdi_security-camera.png" alt="24hrs Security"></div>
+                <div class="w-[95px] md:w-[140px]  h-[59px] flex flex-col gap-[16px] items-center mx-auto">
+                    <div><img class="text-[#B09486] h-[24px] w-[24px]" src="./icons/mdi_security-camera.svg" alt="24hrs Security"></div>
                     <p class="text-[#69645B]">24hrs Security</p>
                 </div>
 
@@ -236,7 +236,7 @@
         </div>
         </section>
 
-        <section class="my-[40px] md:hidden">
+        <section id="location" class="my-[40px] md:hidden">
         <article class="text-black md:w-[400px] lg:w-[460px] h-auto mt-[6px] flex flex-col items-center  md:items-start text-center md:text-left gap-[10px] w-[386px] mx-auto">
             <h1 class="leading-[1.1] font-[Inter] font-bold text-[50px] md:text-[38px] lg:text-[48px] text-[#212121]">Best possible<span class="block">location</span></h1>
             <p class="w-[353px] text-[18px] text-[#696458] font-normal">In the heart of Lekki Phase 1, close to all major exhibitions. Being it Nike Art Gallery to the night life and the beaches...</p>
@@ -245,7 +245,7 @@
         </section>
 
         <section class="w-[100%] md:h-[500px] h-[300px] flex items-center bg-cover"
-        style="background-image: url(./assets/Basemap\ image.png);">
+        style="background-image: url(./assets/Basemap.png);">
 
         <article class="text-black md:w-[400px] lg:w-[460px] h-auto mt-[6px] flex flex-col items-center  md:items-start text-center md:text-left gap-[10px] w-[386px] mx-[64px] hidden md:flex">
             <h1 class="leading-[1.1] font-[Inter] font-bold text-[50px] md:text-[38px] lg:text-[48px] text-[#212121]">Best possible<span class="block">location</span></h1>
@@ -259,7 +259,7 @@
         </section>
             
         <section class="w-[100%] h-[500px] bg-cover bg-center relative"
-        style="background-image: url(assets/e20642e1c3ef7f0047b177502c68de1d77af18f8\ \(1\).jpg);">
+        style="background-image: url(assets/Testimonial\ baseImg.jpg);">
             <img class="absolute bottom-0 right-0" src="./assets/Frame 1000005313.png" alt="">
             <div class="bg-[#00000096] w-[100%] h-[100%]  flex items-center">
                 <img class="w[50%] h-[100%] hidden lg:flex" src="./assets/black person pleased.png" alt="">
@@ -391,19 +391,21 @@
      </main>
 
      <footer class="text-white">
-        <section class="bg-[#66594A] m-2 p-5 sm:p-10 ">
-            <section class="flex flex-col gap-2 sm:flex sm:justify-between">
-                <div class="w-[300.01px]">
-                    <img src="./assets/Frame 1000005480.png" alt="">
+        <section class="bg-[#66594A] m-2 p-8">
+            <section class="bg-[#66594A] m-2 p-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:justify-between">
+
+                <div class="w-[300.01px] grid gap-4">
+                    <img width="200" class="w-[70%]" src="./assets/footer-logo.png" alt="">
                     <p>Where comfort and <br>serenity</p>
-                    <div>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="flex gap-4">
+                        <img src="./icons/meta.svg" alt="">
+                        <img src="./icons/instagram.svg" alt="">
+                        <img src="./icons/x-twitter.svg" alt="">
+                        <img src="./icons/youtube.svg" alt="">
                     </div>
                 </div>
 
-                <div class="flex justify-between sm:w-[47%] w-[100%]">
+                <div class="grid md:grid-cols-3 gap-2">
                     <div>
                         <h3 class="text-[12px] font-[inter] text-[#B1A8A4]">NAVIGATION</h3>
                         <ul class="text-[14px]">
@@ -416,7 +418,7 @@
                         </ul>
                     </div>
 
-                    <div class="hidden sm:flex">
+                    <div class="hidden md:block">
                         <h3 class="text-[12px] font-[inter] text-[#B1A8A4]">COMPANY</h3>
                         <ul class="text-[14px]">
                             <li><a href="">Terms of Service</a></li>

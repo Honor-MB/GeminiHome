@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,22 +16,25 @@
 
     <!------------ THE HEADER SECTION ------------>
 
-     <header class="bg-white sticky right-0 left-0 top-0 z-[100] flex items-center justify-between p-4 md:p-8 mx-auto w-[100%]">
+     <header  class="bg-white sticky right-0 left-0 top-0 z-[100] flex items-center justify-between p-4 md:p-8 mx-auto w-[100%]">
             <div>
                 <img width="200" class="w-48 md:w-64 lg:w-72" src="./assets/geminiHome-logo.png" alt="">
             </div>
 
-            <button id="sm__button--narbar" class="md:hidden">
+            <button id="sm__button--narbar" class="md:hidden relative">
                 <img width="43" src="./assets/Menu.png" alt="Burger Menu">
             </button>
-            <nav  id="sm__narbar" class=" hidden 
-            flex flex-col items-center gap-4 absolute right-0 left-0 top-20 text-center bg-white p-6 text-lg md:flex md:flex-row md:justify-around md:gap-4 md:static md:text-[14px] lg:text-lg" aria-label= "main">
-                <a role="menuitem" href="#home" class="hover:text-[#B09486]">Home</a>
-                <a role="menuitem" href="#gallary" class="hover:text-[#B09486]">Gallery</a>
-                <!-- <a role="menuitem" href="#facilities" class="hover:text-[#B09486]">Facilities</a> -->
-                <a role="menuitem" href="#location" class="hover:text-[#B09486]">Location</a>
-                <a role="menuitem" href="#ooking" class="hover:text-[#B09486]">Booking</a>
-                <a role="menuitem" href="#faq" class="hover:text-[#B09486]">FAQ</a>
+            <nav  id="sm__narbar" class=" hidden
+            flex flex-col items-center  absolute
+            right-0 left-0 top-20 text-center bg-white p-6 text-lg 
+            md:flex md:flex-row md:justify-around md:gap-4 md:static 
+            md:text-[14px] lg:text-lg" aria-label= "main">
+                <a role="menuitem" href="#hero" class="transition duration-300 ease-in-out rounded-lg w-[100%] hover:text-white hover:bg-[#B09486] p-2 md:hover:text-[#B09486] md:hover:bg-white md:p-0 font-bold">Home</a>
+                <a role="menuitem" href="#gallary" class="transition duration-300 ease-in-out rounded-lg w-[100%] hover:text-white hover:bg-[#B09486] p-2 md:hover:text-[#B09486] md:hover:bg-white md:p-0 font-bold">Gallery</a>
+                <a role="menuitem" href="#sm-location" class="md:hidden transition duration-300 ease-in-out rounded-lg w-[100%] hover:text-white hover:bg-[#B09486] p-2 md:hover:text-[#B09486] md:hover:bg-white md:p-0 font-bold">Location</a>
+                <a role="menuitem" href="#location" class=" hidden md:block transition duration-300 ease-in-out rounded-lg w-[100%] hover:text-white hover:bg-[#B09486] p-2 md:hover:text-[#B09486] md:hover:bg-white md:p-0 font-bold">Location</a>
+                <a role="menuitem" href="#booking" class="transition duration-300 ease-in-out rounded-lg w-[100%] hover:text-white hover:bg-[#B09486] p-2 md:hover:text-[#B09486] md:hover:bg-white md:p-0 font-bold">Booking</a>
+                <a role="menuitem" href="#faq" class="transition duration-300 ease-in-out rounded-lg w-[100%] hover:text-white hover:bg-[#B09486] p-2 md:hover:text-[#B09486] md:hover:bg-white md:p-0 font-bold">FAQ</a>
             </nav>
 
             <div class="hidden md:flex md:text-[14px] lg:text-[16px]">
@@ -43,18 +46,18 @@
      <main class="bg-gray-100 ">
 
         <!------------------ THE HERO SECTION--------------------------- -->
-        <section class="flex flex-col md:flex-row md:gap-[0] lg:gap-[60px] xl:gap-[100px] h-full relative z-[1]">
+        <section id="hero" class="scroll-mt-[9rem] flex flex-col md:flex-row md:gap-[0] lg:gap-[60px] xl:gap-[100px] h-full relative z-[1] mb-5">
             <div class="flex flex-col items-center md:my-auto mx-auto w-[80%] md:w-auto md:px-[40px] py-[40px] md:py-[0]">
                 <div class="flex md:justify-start justify-between gap-[16px] font-bold mb-[6px] w-[100%]">
 
                     <div class=" flex gap-2 items-center font-bold rounded-3xl border w-[148px] py-[6px] pe-[16px] ps-[8px] border-[1px] border-[#E5E5E5]">
                         <div>
-                            <img class="w-[24px] h-[24px]" src="./assets/logo-airbnb.png" alt="Airbnb logo">
+                            <img class="w-[24px] h-[24px]" src="./icons/logo-airbnb.svg" alt="Airbnb logo">
                         </div>
                         <div class="text-[10px]">
                             <div class="text-[#6E7491]">RATED on Airbnb</div>
                             <div class="flex gap-1 items-center">
-                                <img class="h-[8px] w-[46px]" src="./assets/Stars.png" alt="Half Star">
+                                <img class="h-[8px] w-[46px]" src="./icons/Stars.svg" alt="Half Star">
                                 <span class="text-[#FFA432] h-[15px] w-[38px]">4.5 / 5</span>
                             </div>
                         </div>
@@ -62,12 +65,12 @@
                     
                     <div class=" flex gap-2 items-center font-bold rounded-3xl border w-[165px] py-[6px] pe-[16px] ps-[8px] border-[1px] border-[#E5E5E5]">
                         <div>
-                            <img class="w-[24px] h-[24px]" src="./assets/logo-trip-advisor.png" alt="Trip advisor logo">
+                            <img class="w-[24px] h-[24px]" src="./icons/logo-trip-advisor.svg" alt="Trip advisor logo">
                         </div>
                         <div class="text-[10px]">
                             <div class="text-[#6E7491]">RATED on Tripadvisor</div>
                             <div class="flex gap-1 items-center">
-                                <img class="h-[8px] w-[46px]" src="./assets/Stars-1.png" alt="Rated Full Star">
+                                <img class="h-[8px] w-[46px]" src="./icons/Stars-1.svg" alt="Rated Full Star">
                                 <span class="text-[#FFA432] h-[15px] w-[38px]">4.9 / 5</span>
                             </div>
                         </div>
@@ -75,12 +78,12 @@
                     
                     <div class="hidden lg:flex gap-2 items-center font-bold rounded-3xl border w-[173px] py-[6px] pe-[16px] ps-[8px] border-[1px] border-[#E5E5E5]">
                         <div>
-                            <img class="w-[24px] h-[24px]" src="./assets/logo-booking.com.png" alt=" Booking logo">
+                            <img class="w-[24px] h-[24px]" src="./icons/logo-booking.com.svg" alt=" Booking logo">
                         </div>
                         <div class="text-[10px]">
                             <div class="text-[#6E7491]">RATED on Booking.com</div>
                             <div class="flex gap-1 items-center">
-                                <img class="h-[8px] w-[46px]" src="./assets/Stars-1.png" alt="Rated Full Star">
+                                <img class="h-[8px] w-[46px]" src="./icons/Stars-1.svg" alt="Rated Full Star">
                                 <span class="text-[#FFA432] h-[15px] w-[38px]">4.9 / 5</span>
                             </div>
                         </div>
@@ -93,7 +96,7 @@
                  <article class="text-black w-[100%] mt-[6px] flex flex-col items-center  md:items-start text-center md:text-left gap-[10px]">
                     <h1 class="leading-[1.1] font-[Inter] font-bold text-[50px] md:text-[38px] lg:text-[48px] text-[#212121]">Luxury Stays, <span class="block">Just One Click Away</span></h1>
                     <p class="w-[353px] text-[18px] text-[#696458] font-normal">Book now and experience luxury like never before.</p>
-                    <button class="flex gap-[8px] py-[10px] px-[16px] bg-[#B09486] text-white text-semibold rounded-3xl  w-[164px] ">See availability <span class="material-icons-outlined w-[12px] h-[12px]">calendar_month</span></button>
+                    <button class="flex gap-[8px] py-[10px] px-[16px] bg-[#B09486] text-white text-semibold rounded-3xl  w-[164px] ">See availability <img src="./icons/calender-Icon.svg" alt=""></button>
                  </article>
             </div>
             <div class="mt-[20px]">
@@ -108,7 +111,7 @@
         
         <!-- ------------------------------GALLARY SECTION--------------------------------- -->
 
-        <section id="gallary" class="py-10 p-4 md:p-8">
+        <section id="gallary" class="scroll-mt-[9rem] py-10 p-4 md:p-8 mb-5">
         <div class="w-[100%] md:w-[70%] lg:w-[52%] mx-auto text-center mb-10">
             <h2 class="font-bold text-[43.36px] md:text-[47px]">Gallary</h2>
             <p class="text-[#69645B] text-[17.34px]">Explore the serene beauty of Gemini Homes—whether it's the minimalist interiors, the surrounding landscapes, or the cozy nooks perfect for relaxation.</p>
@@ -148,7 +151,7 @@
 
         </section>
 
-        <section id="facilities" class="p-4 md:p-8">
+        <section id="facilities" class="scroll-mt-[9rem] p-4 md:p-8 mb-5">
         <div class="w-[100%] md:w-[90%] mx-auto py-10">
 
             <div class="w-[100%] md:w-[70%] lg:w-[52%] mx-auto text-center mb-10">
@@ -236,7 +239,7 @@
         </div>
         </section>
 
-        <section id="location" class="my-[40px] md:hidden">
+        <section id="sm-location" class="scroll-mt-[9rem] my-[40px] md:hidden">
         <article class="text-black md:w-[400px] lg:w-[460px] h-auto mt-[6px] flex flex-col items-center  md:items-start text-center md:text-left gap-[10px] w-[386px] mx-auto">
             <h1 class="leading-[1.1] font-[Inter] font-bold text-[50px] md:text-[38px] lg:text-[48px] text-[#212121]">Best possible<span class="block">location</span></h1>
             <p class="w-[353px] text-[18px] text-[#696458] font-normal">In the heart of Lekki Phase 1, close to all major exhibitions. Being it Nike Art Gallery to the night life and the beaches...</p>
@@ -244,7 +247,7 @@
         </article>
         </section>
 
-        <section class="w-[100%] md:h-[500px] h-[300px] flex items-center bg-cover"
+        <section id="location" class=" scroll-mt-[9rem] w-[100%] md:h-[500px] h-[300px] flex items-center bg-cover "
         style="background-image: url(./assets/Basemap.png);">
 
         <article class="text-black md:w-[400px] lg:w-[460px] h-auto mt-[6px] flex flex-col items-center  md:items-start text-center md:text-left gap-[10px] w-[386px] mx-[64px] hidden md:flex">
@@ -258,21 +261,21 @@
         </div>
         </section>
             
-        <section class="w-[100%] h-[500px] bg-cover bg-center relative"
+        <section class="w-[100%] h-[500px] bg-cover bg-center relative "
         style="background-image: url(assets/Testimonial\ baseImg.jpg);">
             <img class="absolute bottom-0 right-0" src="./assets/Frame 1000005313.png" alt="">
             <div class="bg-[#00000096] w-[100%] h-[100%]  flex items-center">
                 <img class="w[50%] h-[100%] hidden lg:flex" src="./assets/black person pleased.png" alt="">
                 <article class="text-white flex flex-col items-center md:items-center gap-4 text-center w-[80%] md:w-[80git%]  mx-auto">
                     <h1 class="leading-[1.1] font-[Inter] font-bold text-[50px] md:text-[38px] lg:text-[48px]">Anne Johnson</h1>
-                    <p class="flex items-center w-[353px] text-[18px] font-normal "><span class="material-icons-outlined">location_on</span>London, UK | <img class="ms-[10px] w-[80px] h-auto" src="./assets/Stars-1.png" alt="">4.9 (300 reviews)</p>
+                    <p class="flex items-center w-[353px] text-[18px] font-normal "><span class="material-icons-outlined">location_on</span>London, UK | <img class="w-20 h-auto me-2" src="./icons/Stars-1.svg" alt="">4.9 (300 reviews)</p>
                     <p class="w-[80%]  text-[18px] font-normal italic">Exploring Nigeria for the first time and staying over at Gemini1824 was just what I needed. Amazing customer service with good facilities and security. I recommend.</p>
                     <button class="bg-[#B09486] text-white text-semibold rounded-3xl p-3">Book now</button>
                 </article>
             </div>
         </section>
 
-        <section class="bg-white py-10 relative">
+        <section id="faq" class="scroll-mt-[9rem] bg-white py-[5rem] relative mb-5">
             <div class=" md:flex md:flex-row md:items-start md:justify-between w-[90%] mx-auto flex flex-col gap-5 items-center ">
                 <h2 class="text-[45px] font-bold font-[inter]">Questions?</h2>
 
@@ -288,7 +291,7 @@
                             </span>
                         </button>
                         <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
-                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <img src="./icons/Thread.svg" alt="">
                             <div class="text-sm text-slate-500">
                             Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
                             </div>
@@ -306,7 +309,7 @@
                             </span>
                         </button>
                         <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
-                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <img src="./icons/Thread.svg" alt="">
                             <div class="text-sm text-slate-500">
                             Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
                             </div>
@@ -324,7 +327,7 @@
                             </span>
                         </button>
                         <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
-                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <img src="./icons/Thread.svg" alt="">
                             <div class="text-sm text-slate-500">
                             Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
                             </div>
@@ -342,7 +345,7 @@
                             </span>
                         </button>
                         <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
-                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <img src="./icons/Thread.svg" alt="">
                             <div class="text-sm text-slate-500">
                             Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
                             </div>
@@ -360,7 +363,7 @@
                             </span>
                         </button>
                         <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
-                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <img src="./icons/Thread.svg" alt="">
                             <div class="text-sm text-slate-500">
                             Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
                             </div>
@@ -378,7 +381,7 @@
                             </span>
                         </button>
                         <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out flex gap-4 px-5">
-                            <span class="material-icons-outlined text-slate-500">arrow_right_alt</span>
+                            <img src="./icons/Thread.svg" alt="">
                             <div class="text-sm text-slate-500">
                             Check-in is at 12:00 PM, and check-out is at 11:00 AM. If you need flexibility with these times, please contact us in advance, and we'll do our best to accommodate your request.
                             </div>
@@ -390,9 +393,9 @@
         </section>
      </main>
 
-     <footer class="text-white">
-        <section class="bg-[#66594A] m-2 p-8">
-            <section class="bg-[#66594A] m-2 p-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:justify-between">
+     <footer class=" scroll-mt-[9rem] text-white">
+        <section class="bg-[#66594A] m-2 md:p-8 p-4">
+            <section class="bg-[#66594A] m-2 grid grid-cols-1 gap-4 md:grid-cols-2 md:justify-between">
 
                 <div class="w-[300.01px] grid gap-4">
                     <img width="200" class="w-[70%]" src="./assets/footer-logo.png" alt="">
@@ -405,10 +408,10 @@
                     </div>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-2">
+                <div class="grid md:grid-cols-3 grid-cols-2 justify-between gap-3">
                     <div>
-                        <h3 class="text-[12px] font-[inter] text-[#B1A8A4]">NAVIGATION</h3>
-                        <ul class="text-[14px]">
+                        <h3 class="text-[12px] font-[inter] text-[#B1A8A4] mb-2">NAVIGATION</h3>
+                        <ul class="text-[14px] font-[inter] grid gap-2">
                             <li><a href="">Home</a></li>
                             <li><a href="">Gallery</a></li>
                             <li><a href="">Facilities</a></li>
@@ -419,16 +422,16 @@
                     </div>
 
                     <div class="hidden md:block">
-                        <h3 class="text-[12px] font-[inter] text-[#B1A8A4]">COMPANY</h3>
-                        <ul class="text-[14px]">
+                        <h3 class="text-[12px] font-[inter] text-[#B1A8A4] mb-2">COMPANY</h3>
+                        <ul class="text-[14px] font-[inter] grid gap-2">
                             <li><a href="">Terms of Service</a></li>
                             <li><a href="">Privacy Policy</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3 class="text-[12px] font-[inter] text-[#B1A8A4]">CONTACT</h3>
-                        <ul class="text-[14px]">
+                        <h3 class="text-[12px] font-[inter] text-[#B1A8A4] mb-2">CONTACT</h3>
+                        <ul class="text-[14px] font-[inter] grid gap-2 ">
                             <li><a href="">+234 706 528 3558 </a></li>
                             <li><a href="">gemini1824@gmail.com</a></li>
                             <li><a href="">Lekki, Lagos</a></li>
